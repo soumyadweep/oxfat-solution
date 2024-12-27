@@ -1,0 +1,17 @@
+Look carefully there is a Hint.
+Yes, the hint is: "What does .length mean?"
+
+Step 1: Press `ctrl+u`
+
+Step 2: Look carefully at the section between '==== GAME STARTS HERE ====' and '==== GAME ENDS HERE ====:'
+
+Step 3: Try to understand the function checkPW()
+
+Step 4: These lines are importent: 
+                    var pwinfo = "fa20d55a fac150fbebe1b0113a1e5";
+                    if(el.value==pwinfo.length)
+Step 5: Press F12 then go to Console
+
+Step 6: run the following command: `"fa20d55a fac150fbebe1b0113a1e5".length`
+
+Step 7: You should get '30', which is the password.
