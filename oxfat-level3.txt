@@ -1,21 +1,36 @@
-Step 1: Press ctrl+u OR right click + view page source
+### Steps to Reveal the Password Using Page Source and JavaScript
 
-Step 2: Press ctrl+F then put "password"
-Now you will be able to see the source  code
-Step 3: Look carefully at the source code. Find out which line does checks the password matching?
+1. **Open Page Source**:  
+   - Press `Ctrl+U` (Windows/Linux) or `Command+Option+U` (Mac) to open the page source.  
+   - Alternatively, right-click on the page and select **View Page Source**.
 
-Try Step 3 Yourself! If you can't figure out go to Step 4
+2. **Search for the Password**:  
+   - Press `Ctrl+F` (Windows/Linux) or `Command+F` (Mac) to open the search bar.  
+   - Type `"password"` to locate the relevant code in the source.
 
-Step 4: Look at the function checkPW()
+3. **Find the Password Check Logic**:  
+   - Look for a function that checks the entered password, such as `checkPW()`.  
+   - In this example, the function contains an `if` statement like this:  
+     ```javascript
+     if (el.value == unescape("r%20i%20g%20h%20t%20") + "" + "p" + "w" + "" + "9d9f7fba4")
+     ```
 
-It has an if statement:
-    if(el.value==unescape("r%20i%20g%20h%20t%20")+""+"p"+"w"+""+"9d9f7fba4")     
+4. **Decode the Password**:  
+   - Open the browser console by pressing `F12` and navigating to the **Console** tab.  
+   - Type the following code in the console and press Enter:  
+     ```javascript
+     unescape("r%20i%20g%20h%20t%20") + "" + "p" + "w" + "" + "9d9f7fba4"
+     ```
 
-Step 5: Press F12, then open the console
+5. **Reveal the Password**:  
+   - The console will output the password:  
+     ```
+     r i g h t pw9d9f7fba4
+     ```
 
-Step 6: Type the following: 
-                 unescape("r%20i%20g%20h%20t%20")+""+"p"+"w"+""+"9d9f7fba4")
-Step 7: Your password is "r i g h t pw9d9f7fba4"
+6. **Use the Password**:  
+   - Enter the decoded password (`r i g h t pw9d9f7fba4`) in the password field and press **OK**.  
 
-Step 8: Put the above password, and press 'OK' 
-                              Now we are done!
+Congratulations! You've successfully completed the steps.
+
+---
