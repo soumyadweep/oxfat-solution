@@ -1,0 +1,21 @@
+Step 1: Press ctrl+u OR right click + view page source
+
+Step 2: Press ctrl+F then put "password"
+Now you will be able to see the source  code
+Step 3: Look carefully at the source code. Find out which line does checks the password matching?
+
+Try Step 3 Yourself! If you can't figure out go to Step 4
+
+Step 4: Look at the function checkPW()
+
+It has an if statement:
+    if(el.value==unescape("r%20i%20g%20h%20t%20")+""+"p"+"w"+""+"9d9f7fba4")     
+
+Step 5: Press F12, then open the console
+
+Step 6: Type the following: 
+                 unescape("r%20i%20g%20h%20t%20")+""+"p"+"w"+""+"9d9f7fba4")
+Step 7: Your password is "r i g h t pw9d9f7fba4"
+
+Step 8: Put the above password, and press 'OK' 
+                              Now we are done!
