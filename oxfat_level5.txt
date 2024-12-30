@@ -1,0 +1,7 @@
+Step 1: View Page Source (ctrl+u)
+
+Step 2: Analyze the `checkPW()` function 
+
+Step 3: atoi("o")+16 = 127 because converts a character to its ASCII number
+                function atoi(a), the ascii value of "o" is 111 the add 16 to get 127, which is the password.
+ 
